@@ -25,7 +25,7 @@ dependencies {
     implementation(libs.guava)
     
     implementation("org.seleniumhq.selenium:selenium-java:4.15.0") // Use the latest version
-    testImplementation("org.junit.jupiter:junit-jupiter:5.10.0")
+    testImplementation("junit:junit:4.13.2")
 }
 
 // Apply a specific Java toolchain to ease working on different environments.
@@ -37,5 +37,5 @@ java {
 
 tasks.named<Test>("test") {
     // Use JUnit Platform for unit tests.
-    useJUnitPlatform()
+    useJUnit()
 }
