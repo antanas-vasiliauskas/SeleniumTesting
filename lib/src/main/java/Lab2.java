@@ -22,7 +22,9 @@ public class Lab2 {
         	//2. Close the cookie consent window.
         	driver.findElement(By.xpath("//a[contains(@id,'close-fixedban')]")).click();
         	//3. Select the "Widgets" tab.
-        	driver.findElement(By.xpath("//div[h5='Widgets']")).click();
+        	WebElement widgetsButton = driver.findElement(By.xpath("//div[h5='Widgets']"));
+            ((JavascriptExecutor) driver).executeScript("arguments[0].scrollIntoView(true);", widgetsButton); // To avoid ElementClickInterceptedException
+            widgetsButton.click();
         	//4. Choose the "Progress Bar" menu item.
         	driver.findElement(By.xpath("//span[text()='Progress Bar']")).click();
         	//5. Click the "Start" button.
