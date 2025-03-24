@@ -114,6 +114,7 @@ public class Lab3 {
         	By.xpath("//div[@class='section order-completed']//strong")
         ));
         Assert.assertTrue(confirmation.getText().contains("successfully processed"));
+        System.out.println("Lab3 test passed");
     }
     
     private void addProductToCart(String productName) {
@@ -124,7 +125,6 @@ public class Lab3 {
         wait.until(ExpectedConditions.visibilityOfElementLocated(
             By.xpath("//p[@class='content' and contains(., 'shopping cart')]")
         ));
-        System.out.println("Lab3 tests passed");
     }
 
     private void fillBillingAddress() {
