@@ -57,6 +57,7 @@ public class Lab4 {
 	        }
 	        // first book not present
 	        Assert.assertFalse("First book should not be present", compareList.contains(booksToAdd.get(0)));
+	        System.out.println("Lab4 tests passed");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}

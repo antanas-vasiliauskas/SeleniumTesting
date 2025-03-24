@@ -124,6 +124,7 @@ public class Lab3 {
         wait.until(ExpectedConditions.visibilityOfElementLocated(
             By.xpath("//p[@class='content' and contains(., 'shopping cart')]")
         ));
+        System.out.println("Lab3 tests passed");
     }
 
     private void fillBillingAddress() {
