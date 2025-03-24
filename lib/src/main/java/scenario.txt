@@ -1,0 +1,15 @@
+Scenario: 5) add 5 elements to compare list, verify that the first item gets removed from the list.
+1. Open the website: https://demowebshop.tricentis.com/
+   Expected result: Website opens up.
+2. Read 5 book names from books.txt ("Computing and Internet", "Copy of Computing and Internet EX", "Fiction", "Fiction EX", "Health Book")
+   Expected result: book names stored in a list.
+3. For each book:
+   - Click "Books" in the navigation toolbar
+	 Expected result: Opens book listing with multiple books to choose.
+   - Locate book from the list and click on it
+   Expected result: Opens detailed listing for that book.
+   - Click "Add to compare list"
+   Expected result: Redirects to compare list page with the book added to compare list.
+4. After all 5 books added, verify:
+   - The compare list contains 4 items of the 4 books that were added ("Copy of Computing and Internet EX", "Fiction", "Fiction EX", "Health Book")
+   - The first book that was added ("Computing and Internet") is not present in the list.
